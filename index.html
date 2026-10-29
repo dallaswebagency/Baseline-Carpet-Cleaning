@@ -150,6 +150,8 @@ nav.main .sub a:hover{background:var(--green-800);color:var(--amber)}
 .panel li::before{content:"";position:absolute;left:0;top:17px;width:12px;height:3px;background:var(--amber)}
 .panel .more{margin-top:18px;font-family:var(--display);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);display:inline-flex;gap:10px;align-items:center;opacity:0;transform:translateY(10px);transition:.4s .1s}
 .panels:hover .panel{flex:.7}
+.panels:hover .panel:not(:hover):not(:focus-within) h3{font-size:2rem}
+.panel h3{transition:font-size .4s}
 .panels:not(:hover):not(:focus-within) .p1{flex:2.2}
 .panels:not(:hover):not(:focus-within) .p1 ul{max-height:260px;opacity:1}
 .panels:not(:hover):not(:focus-within) .p1 .more{opacity:1;transform:none}
